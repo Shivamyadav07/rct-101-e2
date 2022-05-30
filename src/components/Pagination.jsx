@@ -13,7 +13,7 @@ const Pagination = ({handlepage,handlelimit,page}) => {
         <option data-cy="pagination-limit-9" value={9}>9</option>
       </Select>
       <Button data-cy="pagination-next-button" onClick={()=>handlepage(page+1)} >next</Button>
-      <Button data-cy="pagination-last-button">last</Button>
+      <Button data-cy="pagination-last-button" onClick={()=>handlepage()}>last</Button>
     </ButtonGroup>
   );
 };
